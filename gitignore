@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+TestResults/
+*.suo
+/node_modules
+**\launchSettings.json
+*.user

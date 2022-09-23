@@ -1,0 +1,45 @@
+﻿<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Async test method</Title>
+      <Description>Code snippet for an async test method</Description>
+      <Author>Keith Anders</Author>
+      <Shortcut>testa</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Microsoft.VisualStudio.TestTools.UnitTesting</Namespace>
+        </Import>
+        <Import>
+          <Namespace>System.Threading.Tasks</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal Editable="false">
+          <ID>TestMethod</ID>
+          <Function>SimpleTypeName(global::Microsoft.VisualStudio.TestTools.UnitTesting.TestMethod)</Function>
+        </Literal>
+        <Literal>
+          <ID>Name</ID>
+          <ToolTip>Method name.</ToolTip>
+          <Default>MyMethodName</Default>
+        </Literal>
+        <Literal Editable="false">
+          <ID>Task</ID>
+          <Function>SimpleTypeName(global::System.Threading.Tasks.Task)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[$TestMethod$]
+        public async Task $Name$()
+        {
+$end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,52 @@
+{
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.suggestSelection": "first",
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSaveMode": "file",
+    // "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.languageServer": "Jedi",
+    "python.analysis.typeCheckingMode": "strict",
+    "emmet.includeLanguages": { "*HTML": "html" },
+    "emmet.showExpandedAbbreviation": "always",
+    "workbench.settings.editor": "ui",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Visual Studio 2019 Dark",
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.cellToolbarLocation": {
+      "default": "right",
+      "jupyter-notebook": "left"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": false
+    },
+    "files.associations": {
+      "*.py": "python"
+    },
+    "javascript.inlayHints.parameterNames.enabled": "all",
+    "typescript.inlayHints.parameterNames.enabled": "all",
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+      "editor.formatOnSave": false
+    },
+    "workbench.layoutControl.enabled": true,
+    "markdownlint.config": {
+        "default": true,
+        "MD007": { "indent": 4 }
+    },
+    "window.zoomLevel": 1,
+    "redhat.telemetry.enabled": false,
+    "[markdown]": {
+      "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    }
+}

@@ -1,0 +1,45 @@
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>Async Fact</Title>
+      <Description>Code snippet for an async Fact method</Description>
+      <Author>Keith Anders</Author>
+      <Shortcut>facta</Shortcut>
+    </Header>
+    <Snippet>
+      <Imports>
+        <Import>
+          <Namespace>Xunit</Namespace>
+        </Import>
+        <Import>
+            <Namespace>System.Threading.Tasks</Namespace>
+        </Import>
+      </Imports>
+      <Declarations>
+        <Literal Editable="false">
+          <ID>FactAtt</ID>
+          <Function>SimpleTypeName(global::Xunit.Fact)</Function>
+        </Literal>
+        <Literal>
+          <ID>Name</ID>
+          <ToolTip>Method name.</ToolTip>
+          <Default>NewTestName</Default>
+        </Literal>
+        <Literal Editable="false">
+            <ID>Task</ID>
+            <Function>SimpleTypeName(global::System.Threading.Tasks.Task)</Function>
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp">
+        <![CDATA[[$FactAtt$]
+        public async $Task$ $Name$()
+        {
+          $end$
+        }]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

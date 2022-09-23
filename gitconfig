@@ -1,0 +1,39 @@
+[user]
+	email = kanders42@outlook.com
+	name = Keith Anders
+[core]
+	excludesfile = ~/.gitignore
+	editor = 'C:\\Users\\kande\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code.cmd' --wait
+	autocrlf = true
+[difftool "bc4"]
+	cmd = \"C:/Program Files/Beyond Compare 4/BComp.exe\" "$LOCAL" "$REMOTE"
+[mergetool "bc4"]
+	cmd = \"C:/Program Files/Beyond Compare 4/BComp.exe\" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
+	trustExitCode = true
+[merge]
+	tool = bc4
+[diff]
+	tool = bc4
+[difftool]
+	prompt = false
+[http "https://github.com"]
+	sslCAInfo=~/github.cer
+[alias]
+	p = pull -v --progress origin master
+	po = push origin
+	ap = add -p
+	s = status
+	c = checkout
+	cm = checkout master
+	cb = checkout -b
+	dl = branch -d
+	dr = push --delete origin
+	ss = stash save stash
+	sp = stash pop
+	sl = stash list
+	b = branch
+	ba = branch -a
+	mt = mergetool
+	fp = fetch --prune
+	gol = log --graph --oneline
+	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset%n' --abbrev-commit --date=relative --branches
